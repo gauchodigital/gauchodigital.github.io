@@ -1,0 +1,273 @@
+/* 🔹 Estilos generales */
+.custom-footer{
+    background: #1E2436 !important;
+}
+.footer {
+    background: #1E2436;
+    color: white;
+    padding: 50px 0;
+}
+
+/* 🔹 Control de columnas */
+.footer-col {
+    margin-bottom: 30px; /* Para mejorar el espaciado en mobile */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 🔹 Estilos del logo */
+.footer-logo {
+    width: 80%; /* Reducimos un poco el tamaño para evitar que quede pegado */
+    margin-bottom: 15px;
+}
+
+/* 🔹 Espaciado entre los textos */
+.footer-texto {
+    font-size: 1.3rem;
+    margin: 0px;
+}
+
+.footer-destacado {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    
+}
+
+/* 🔹 Estilos del menú */
+.footer-titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFC107;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    font-family: 'poppins';
+}
+
+.footer-menu li {
+    margin-bottom: 8px; /* Ajuste para más espacio entre elementos */
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+    color: #FFC107;
+}
+
+/* 🔹 Contacto */
+.footer-contacto {
+    list-style: none;
+    padding: 0;
+    font-family: 'poppins';
+    
+}
+.footer-contacto a{
+    color: white;
+    text-decoration: none;
+}
+.footer-contacto a:hover{
+    color:var(--color-amarillo)
+}
+/* 🔹 Alinear los iconos de contacto */
+.footer-contacto li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-contacto span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* 🔹 Iconos de contacto */
+.footer-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* 🔹 Línea divisoria */
+.footer-linea {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+/* 🔹 Parte inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    font-family: 'poppins';
+}
+
+/* 🔹 Enlaces inferiores */
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.footer-links a:hover {
+    color: #FFC107;
+}
+
+/* 🔹 Iconos redes sociales */
+.footer-social a {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.footer-social-icon {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.botones-flotantes {
+    position: fixed;
+    bottom: 300px; /* Distancia del borde inferior */
+    right: -15px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los botones */
+    z-index: 1000; /* Para que quede arriba del contenido */
+    width: 221px;
+    height: 77px;
+    
+}
+
+/* 🔹 Botón Asesor */
+.boton-asesor {
+    background: #FFC107;
+    color: #1A2A4A;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transform: skewX(-15deg);
+    left: 0px;
+    text-align: left;
+    font-size: 1rem;
+    
+}
+.botones-flotantes-whatsapp{
+    display: flex;
+
+    background-color: #40E45D;
+    position: fixed;
+    bottom: 230px; /* Distancia del borde inferior */
+    right: -15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 45px 10px 0px;
+    z-index: 1000; /* Para que quede arriba del contenido */
+    transform: skewX(-15deg);
+    padding-right: 45px;
+    justify-content: center;
+}
+.botones-flotantes-whatsapp p{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 🔹 Botón WhatsApp */
+.boton-whatsapp{
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    
+    
+    text-align: left;
+    font-size: 1.5rem;
+    
+}
+.boton-whatsapp img {
+    width: 30px; /* Tamaño del icono */
+    height: auto;
+    transition: transform 0.2s;
+}
+
+/* 🔹 Efecto hover */
+.boton-asesor:hover {
+    background: #E0A800;
+}
+
+.boton-whatsapp img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* 🔹 MEDIA QUERY PARA MOBILE */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-links {
+        margin-bottom: 10px;
+    }
+
+    .boton-asesor {
+        background: #FFC107;
+        color: #1A2A4A;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        transform: skewX(-15deg);
+        
+        text-align: left;
+        font-size: 1rem;
+        
+    }
+    .botones-flotantes-whatsapp{
+        background-color: #40E45D;
+        position: fixed;
+        bottom: 30px; /* Distancia del borde inferior */
+        right: -10px; /* Distancia del borde derecho */
+        display: flex;
+        flex-direction: row ;
+        gap: 10px; /* Espacio entre los botones */
+        z-index: 1000; /* Para que quede arriba del contenido */
+        width: 221px;
+        height: 50px;
+        transform: skewX(-15deg);
+    }
+    .boton-whatsapp img {
+        width: 30px;
+    }
+    
+    .botones-flotantes{
+        bottom:82px
+    }
+
+}
+

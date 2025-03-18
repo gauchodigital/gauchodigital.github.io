@@ -1,0 +1,182 @@
+:root {
+    --color-azul: #242F4C;  /* Azul  */
+    --color-amarillo: #F4C200; /* Amarillo */
+    --color-wsp: #40E45D;  /* verde */
+ 
+}
+
+/* 🔹 Banner de Productos */
+.banner-productos {
+    background: url('/imagenes/banner-productos.png') no-repeat center center;
+    background-size: cover;
+    color: var(--color-amarillo);
+    min-height: 50vh; /* Ajusta la altura del banner */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+/* 🔹 Contenido dentro del banner */
+.titulo-banner {
+	color: #F4C200;
+	text-shadow: 0px 4px 10px rgba(36, 47, 77, 0.50);
+	
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 900;
+	
+	text-transform: uppercase;
+}
+
+.subtitulo-banner {
+	color: #FFF;
+	
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 900;
+	
+	text-transform: uppercase;
+}
+section.productos-container {
+    margin-top: 50px;
+	
+}
+/* 🔹 Estilo del contenedor */
+.productos-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 60px auto;
+    background: white;
+    border: 1px solid #1A2A4A; /* Borde general */
+}
+
+/* 🔹 Estilos de cada pestaña */
+.productos-menu li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #1A2A4A; /* Separación entre pestañas */
+}
+
+/* 🔹 Elimina el borde derecho del último ítem */
+.productos-menu li:last-child {
+    border-right: none;
+}
+
+/* 🔹 Estilos de los enlaces del menú */
+.productos-menu a {
+    display: block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1A2A4A;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Efecto al pasar el mouse */
+.productos-menu a:hover {
+    background: #1A2A4A;
+    color: #FFC107;
+}
+
+/* 🔹 Pestaña activa */
+.productos-menu a.active {
+    background: #1A2A4A;
+    color: #FFC107;
+}
+
+
+
+
+
+/* 🔹 Estilos para la grilla de productos */
+.producto {
+    text-align: center;
+    padding: 15px;
+   
+    transition: 0.3s ease-in-out;
+}
+
+.producto:hover {
+    border-color: #1A2A4A;
+}
+
+.producto img {
+    width: 100%;
+    max-height: 200px;
+    object-fit:contain;
+}
+
+.productos-lista{
+	
+}
+
+.producto-titulo {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 10px;
+	color: var(--color-azul);
+	text-align: left;
+}
+
+.producto-subtitulo {
+    color: #FFC107;
+    font-weight: 900;
+	text-align: left;
+}
+
+.producto-ficha {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1A2A4A;
+    text-decoration: none;
+    font-weight: bold;
+	border: 0px;
+	background-color: transparent;
+	
+}
+
+/* 🔹 Etiqueta (Ejemplo: 1L - 4L) */
+.etiqueta {
+    background-color: #FFC107;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+ 
+    border-radius: 3px;
+}
+
+.modal-dialog.modal-dialog-centered {
+    max-width: 63vh;
+}
+
+
+/* 🔹 Media Queries para hacerlo responsive */
+@media (max-width: 992px) {
+    .titulo-banner {
+        font-size: 3rem;
+    }
+
+    .subtitulo-banner {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo-banner {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .subtitulo-banner {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .banner-productos {
+        text-align: center;
+        padding: 10vw 5vw;
+    }
+}
