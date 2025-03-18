@@ -157,6 +157,7 @@
     z-index: 1000; /* Para que quede arriba del contenido */
     width: 221px;
     height: 77px;
+    transform: skewX(-15deg);
     
 }
 
@@ -168,26 +169,33 @@
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
-    transform: skewX(-15deg);
+    
     left: 0px;
     text-align: left;
     font-size: 1rem;
     
 }
+.boton-asesor span {
+    display: inline-block;
+    transform: skewX(15deg);
+  }
 .botones-flotantes-whatsapp{
-    display: flex;
-
+    transform: skewX(-15deg);
     background-color: #40E45D;
     position: fixed;
     bottom: 230px; /* Distancia del borde inferior */
     right: -15px;
     display: flex;
     align-items: center;
-    padding: 10px 45px 10px 0px;
     z-index: 1000; /* Para que quede arriba del contenido */
-    transform: skewX(-15deg);
+    
     padding-right: 45px;
     justify-content: center;
+}
+
+.botones-flotantes-whatsapp span{
+    display: inline-block;
+    transform: skewX(15deg);
 }
 .botones-flotantes-whatsapp p{
     margin: 0px;

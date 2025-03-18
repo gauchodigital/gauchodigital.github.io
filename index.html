@@ -216,7 +216,7 @@
         <video id="videoBG" src="/video/fabrica-comprimido.mp4" autoplay muted loop playsinline ></video>
     </div>
 
-    <div class="container-fluid seccion-fabrica position-relative">
+    <div class="container-fluid seccion-fabrica ">
         <!-- Título principal -->
         <div class="row">
             <div class="col-8 text-center mx-auto">
@@ -225,35 +225,85 @@
         </div>
     
         <!-- Contenedor de la imagen de fondo -->
-        <div class="row position-relative">
-            <div class="col-12 pista-botones">
-                <div class="fondo-fabrica">
-                    <!-- Botones con etiquetas y textos emergentes -->
-                    <div class="boton tecnologia" data-texto="Lubricantes Mannol cuenta con una gran capacidad productiva. Gracias a sus 30 millones de litros de almacenamiento podemos garantizar la producción para nuestros distribuidores en 95 países.">
-                        <span class="boton-texto">TECNOLOGÍA</span>
-                    </div>
+        <div class="d-flex flex-wrap justify-content-center gap-5 botones-pista">
+            <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Lubricantes Mannol cuenta con una gran capacidad productiva. Gracias a sus 30 millones de litros de almacenamiento podemos garantizar la producción para nuestros distribuidores en 95 países.">
+                <span class="boton-texto">TECNOLOGÍA</span>
+                <img src="/imagenes/frame.png" class="boton-icon">
+            </button>
     
-                    <div class="boton control-calidad" data-texto="Mannol cuenta con más de 300 certificaciones distintas para sus productos. Entre ellas la prestigiosa norma internacional ISO9001:2008.">
-                        <span class="boton-texto">CONTROL DE CALIDAD</span>
-                    </div>
+            <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Mannol cuenta con más de 300 certificaciones distintas para sus productos. Entre ellas la prestigiosa norma internacional ISO9001:2008.">
+                <span class="boton-texto">CONTROL DE CALIDAD</span>
+                <img src="/imagenes/frame.png" class="boton-icon">
+            </button>
     
-                    <div class="boton packaging" data-texto="Todos nuestros envases son producidos bajo las más estrictas normas de calidad. Se prueba cada envase individualmente para garantizar que no tengan defectos.">
-                        <span class="boton-texto">PACKAGING</span>
-                    </div>
+            <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Todos nuestros envases son producidos bajo las más estrictas normas de calidad. Se prueba cada envase individualmente para garantizar que no tengan defectos.">
+                <span class="boton-texto">PACKAGING</span>
+                <img src="/imagenes/frame.png" class="boton-icon">
+            </button>
     
-                    <div class="boton envasado" data-texto="Contamos con 11 líneas de envasado totalmente automáticas, que permiten procesar 3.6 millones de envases mensuales. Logrando así una producción diaria de 400 toneladas.">
-                        <span class="boton-texto">ENVASADO</span>
-                    </div>
+            <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Contamos con 11 líneas de envasado totalmente automáticas, que permiten procesar 3.6 millones de envases mensuales. Logrando así una producción diaria de 400 toneladas.">
+                <span class="boton-texto">ENVASADO</span>
+                <img src="/imagenes/frame.png" class="boton-icon">
+            </button>
     
-                    <div class="boton logistica" data-texto="Con una capacidad de traslado diaria de 350 toneladas, se despachan mensualmente 210 camiones y 42 vagones de tren. Permitiendo llegar a más de 96 países alrededor del mundo.">
-                        <span class="boton-texto">LOGÍSTICA </span>
-                    </div>
-
+            <button type="button" class="btn btn-secondary tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Con una capacidad de traslado diaria de 350 toneladas, se despachan mensualmente 210 camiones y 42 vagones de tren. Permitiendo llegar a más de 96 países alrededor del mundo.">
+                <span class="boton-texto">LOGÍSTICA</span>
+                <img src="/imagenes/Frame.png" class="boton-icon">
+            </button>
+        </div>
+        <!-- Versión Mobile (oculta en pantallas mayores a 1024px) -->
+        <div class="botones-mobile">
+            <div class="mobile-item">
+                <div class="encabezado">
+                    <h4 class="normal">TECNOLOGÍA</h4>
+                    <img src="/imagenes/Frame.png" alt="">
                 </div>
+                <p>Lubricantes Mannol cuenta con una gran capacidad productiva. Gracias a sus 30 millones de litros de almacenamiento podemos garantizar la producción para nuestros distribuidores en 95 países.</p>
+            </div>
+            <div class="mobile-item">
+                <div class="encabezado">
+                    <h4 class="normal">CONTROL DE CALIDAD</h4>
+                    <img src="/imagenes/Frame.png" alt="">
+                </div>
+                <p>Mannol cuenta con más de 300 certificaciones distintas para sus productos. Entre ellas la prestigiosa norma internacional ISO9001:2008.</p>
+            </div>
+            <div class="mobile-item">
+                <div class="encabezado">
+                    <h4 class="normal">PACKAGING</h4>
+                    <img src="/imagenes/Frame.png" alt="">
+                </div>
+                
+                <p>Todos nuestros envases son producidos bajo las más estrictas normas de calidad. Se prueba cada envase individualmente para garantizar que no tengan defectos.</p>
+            </div>
+            <div class="mobile-item">
+                <div class="encabezado">
+                    <h4 class="normal">ENVASADO</h4>
+                    <img src="/imagenes/Frame.png" alt="">
+                </div>
+                
+                <p>Contamos con 11 líneas de envasado totalmente automáticas, que permiten procesar 3.6 millones de envases mensuales. Logrando así una producción diaria de 400 toneladas.</p>
+            </div>
+            <div class="mobile-item">
+                <div class="encabezado">
+                    <h4 class="normal">LOGÍSTICA</h4>
+                    <img src="/imagenes/Frame.png" alt="">
+                </div>
+                <p>Con una capacidad de traslado diaria de 350 toneladas, se despachan mensualmente 210 camiones y 42 vagones de tren. Permitiendo llegar a más de 96 países alrededor del mundo.</p>
             </div>
         </div>
+
+
+
+
+    </div>
+        
     
-        <!-- Ubicación -->
+        
        
     </div>
     

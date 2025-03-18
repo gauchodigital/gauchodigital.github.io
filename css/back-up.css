@@ -1,0 +1,164 @@
+
+/* Posicionamiento de cada etiqueta */
+.tecnologia { top: 38%; left: 13%; }
+.control-calidad { top: 23%; left: 43%; }
+.packaging { top: 58%; left: 31%; }
+.envasado { top: 87%; left: 50%; }
+.logistica { top: 53%; right: 15%; }
+
+
+
+/* 1440px a 1539px */
+@media (min-width: 1440px) and (max-width: 1539px) {
+    .tecnologia { top: 29%; left: 0%; }
+    .control-calidad { top: 16%; left: 42%; }
+    .packaging { top: 50%; left: 27%; }
+    .envasado { top: 73%; left: 48%; }
+    .logistica { top: 42%; right: 0%; }
+}
+
+/* 1540px a 1639px */
+@media (min-width: 1540px) and (max-width: 1639px) {
+    .tecnologia { top: 33%; left: 12%; }
+    .control-calidad { top: 19%; left: 42%; }
+    .packaging { top: 59%; left: 32%; }
+    .envasado { top: 88%; left: 48%; }
+    .logistica { top: 50%; right: 14%; }
+}
+
+/* 1640px a 1739px */
+@media (min-width: 1640px) and (max-width: 1739px) {
+    .tecnologia { top: 33%; left: 12%; }
+    .control-calidad { top: 16%; left: 42%; }
+    .packaging { top: 59%; left: 32%; }
+    .envasado { top: 92%; left: 48%; }
+    .logistica { top: 50%; right: 14%; }
+}
+
+/* 1740px a 1819px */
+@media (min-width: 1740px) and (max-width: 1819px) {
+    .tecnologia { top: 33%; left: 12%; }
+    .control-calidad { top: 13%; left: 42%; }
+    .packaging { top: 60%; left: 33%; }
+    .envasado { top: 95%; left: 48%; }
+    .logistica { top: 51%; right: 17%; }
+}
+
+/* 1820px a 1889px */
+@media (min-width: 1820px) and (max-width: 1889px) {
+    .tecnologia { top: 23%; left: 12%; }
+    .control-calidad { top: 3%; left: 42%; }
+    .packaging { top: 53%; left: 24%; }
+    .envasado { top: 88%; left: 48%; }
+    .logistica { top: 42%; right: 17%; }
+}
+
+/* 1890px a 1919px */
+@media (min-width: 1890px) and (max-width: 1919px) {
+    .tecnologia { top:18%; left: 15%; }
+    .control-calidad { top: -1%; left: 45%; }
+    .packaging { top: 47%; left: 34%; }
+    .envasado { top: 82%; left: 50%; }
+    .logistica { top: 37%; right: 17%; }
+}
+
+/* 1920px a 3455px */
+@media (min-width: 1920px) and (max-width: 2385px) {
+    .tecnologia { top: 34%; left: 0%; }
+    .control-calidad { top: 22%; left: 45%; }
+    .packaging { top: 53%; left: 34%; }
+    .envasado { top: 84%; left: 50%; }
+    .logistica { top: 42%; right: 17%; }
+}
+
+@media (min-width: 2385px) and (max-width: 2390px) {
+    .tecnologia { top: 34%; left: 0%; }
+    .control-calidad { top: 7%; left: 45%; }
+    .packaging { top: 53%; left: 34%; }
+    .envasado { top: 84%; left: 50%; }
+    .logistica { top: 42%; right: 17%; }
+}
+
+
+@media (min-width: 2385px) and (max-width: 3455px) {
+    .tecnologia { top: 33%; left: -9%; }
+    .control-calidad { top: 19%; left: 45%; }
+    .packaging { top: 55%; left: 27%; }
+    .envasado { top: 80%; left: 50%; }
+    .logistica { top: 47%; right: -5%; }
+}
+
+/* Desde 3456px en adelante */
+@media (min-width: 3456px) {
+    .tecnologia { top: 35%; left: 17%; }
+    .control-calidad { top: 17%; left: 45%; }
+    .packaging { top: 61%; left: 37%; }
+    .envasado { top: 95%; left: 50%; }
+    .logistica { top: 53%; right: 20%; }
+}
+
+/* 
+@media (min-width: 1140px) {
+    .tecnologia { top: 37%; left: 6%; }
+    .control-calidad { top: 23%; left: 40%; }
+    .packaging { top: 55%; left: 25%; }
+    .envasado { top: 81%; left: 48%; }
+    .logistica { top: 50%; right: 7%; }
+}
+@media (min-width: 1180px) {
+    .tecnologia { top: 14%; left: 9%; }
+    .control-calidad { top: -1%; left: 40%; }
+    .packaging { top: 35%; left: 31%; }
+    .envasado { top: 62%; left: 48%; }
+    .logistica { top: 28%; right: 13%; }
+} */
+
+.seccion-fabrica {
+    background: url('/imagenes/back.png') no-repeat center center;
+    background-size: cover;
+    height: auto;
+    color: white;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    
+}
+
+/* Título */
+.titulo-pista {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "poppins";
+    text-transform: uppercase;
+}
+
+/* Contenedor de la imagen */
+.fondo-fabrica {
+   
+    width: 100%;
+    max-width: 1440px; /* máximo recomendado para estabilidad */
+    margin: 0 auto;
+    background: url('/imagenes/fondo-fabrica.png') no-repeat center center;
+    background-size: cover;
+    aspect-ratio: 16/9; /* esto mantiene la proporción siempre fija */
+}
+
+
+/* 🔹 Botones normales */
+.boton {
+    position: absolute;
+    background-color: #FFC107; /* Amarillo */
+    color: var(--color-azul);
+    font-weight: bold;
+    width: 200px;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.control-calidad{
+    width: 250px;
+}
