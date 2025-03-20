@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia esto si usas otra rama para el despliegue
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Build the project
+        run: |
+          echo "No build step required"  # Borra esto si necesitas compilar
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
