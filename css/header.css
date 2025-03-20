@@ -39,6 +39,40 @@
 
 
 }
+.dropdown-menu{
+    font-family: 'Poppins';
+}
+/* Aplica el borde a cada item */
+a.dropdown-item {
+    border-bottom: 1px solid #fff; /* línea blanca */
+    padding: 10px;
+  }
+  
+
+
+@media (min-width: 768px) {
+    /* Por defecto, ocultamos el menú con opacidad y una pequeña traslación */
+    .navbar .dropdown .dropdown-menu {
+      display: block; /* Forzamos el display para que el hover funcione */
+      opacity: 0;
+      transform: translateY(20px);
+      visibility: hidden;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none; /* Evita que se interactúe cuando está oculto */
+      border: 1px solid white;
+      padding: 0px;
+     
+    }
+  
+    /* Al pasar el mouse sobre el elemento dropdown, se muestra el submenú */
+    .navbar .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
 
 @media (max-width: 768px){
     .logo-header{

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Aditivos - Mannol Argentina | Tips</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/global.css" rel="stylesheet" />
+  <link href="/css/header.css" rel="stylesheet" />
+  <link href="/css/footer.css" rel="stylesheet" />
+  <link href="/css/productos.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="header"></div>
+
+  <!-- Banner -->
+  <section class="banner-productos d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-start">
+          <h1 class="titulo-banner">Aditivos</h1>
+          <p class="subtitulo-banner">para lubricante, carburante y otros</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menú de Categorías -->
+  <section class="productos-container">
+    <div class="container">
+      <ul class="productos-menu">
+        <li><a class="active" data-filter="all" href="#">Todos</a></li>
+        <li><a data-filter="pf-lubri" href="#">Para lubricante</a></li>
+        <li><a data-filter="pf-carb" href="#">Para carburante</a></li>
+        <li><a data-filter="pf-otros" href="#">Otros</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Listado de Productos -->
+  <section class="productos-container">
+    <div class="container">
+      <div class="row productos-lista">
+        <!-- Producto 1: Injector Cleaner -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Injector Cleaner" src="img-shop/limpia-inyector-nafta.jpg" /></a>
+              <a href="#"><img alt="Injector Cleaner" src="img-shop/limpia-inyector-nafta.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Injector Cleaner</h4>
+            <p class="producto-subtitulo">Limpia inyectores Nafta</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9981.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 2: Diesel Jet Cleaner -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Diesel Jet Cleaner" src="img-shop/limpia-inyector-diesel.jpg" /></a>
+              <a href="#"><img alt="Diesel Jet Cleaner" src="img-shop/limpia-inyector-diesel.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Diesel Jet Cleaner</h4>
+            <p class="producto-subtitulo">Limpia inyectores Diesel</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9980.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 3: AdBlue ® -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">10L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="AdBlue ®" src="img-shop/adblue-urea.jpg" /></a>
+              <a href="#"><img alt="AdBlue ®" src="img-shop/adblue-urea.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">AdBlue ®</h4>
+            <p class="producto-subtitulo">DIN 70070</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/3001.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 4: Oil Leak-Stop -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-lubri">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Oil Leak-Stop" src="img-shop/9423-1.jpg" /></a>
+              <a href="#"><img alt="Oil Leak-Stop" src="img-shop/9423-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Oil Leak-Stop</h4>
+            <p class="producto-subtitulo">Sella fuga de aceite</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9423.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 5: Molibden Additive -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-lubri">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Molibden Additive" src="img-shop/9991-1.jpg" /></a>
+              <a href="#"><img alt="Molibden Additive" src="img-shop/9991-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Molibden Additive</h4>
+            <p class="producto-subtitulo">Disulfuro de Molibdeno</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9991.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 6: Motor Doctor -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-lubri">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Motor Doctor" src="img-shop/9990-1.jpg" /></a>
+              <a href="#"><img alt="Motor Doctor" src="img-shop/9990-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Motor Doctor</h4>
+            <p class="producto-subtitulo">Max.Compresión y bajo humo</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9990.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 7: Power Steering Leak-Stop -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-otros">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Power Steering Leak-Stop" src="img-shop/9923-1.jpg" /></a>
+              <a href="#"><img alt="Power Steering Leak-Stop" src="img-shop/9923-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Power Steering Leak-Stop</h4>
+            <p class="producto-subtitulo">Sella fuga hidráulico</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9923.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 8: Lithium Spray -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-otros">
+          <div class="producto">
+            <span class="etiqueta">400ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Lithium Spray" src="img-shop/9881.jpg" /></a>
+              <a href="#"><img alt="Lithium Spray" src="img-shop/9881.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Lithium Spray</h4>
+            <p class="producto-subtitulo">Lubricante para filtro</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9881.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 9: Radiator Leak-Stop -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-otros">
+          <div class="producto">
+            <span class="etiqueta">300ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Radiator Leak-Stop" src="img-shop/9906-1.jpg" /></a>
+              <a href="#"><img alt="Radiator Leak-Stop" src="img-shop/9906-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Radiator Leak-Stop</h4>
+            <p class="producto-subtitulo">Sella fuga radiador</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9966.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 10: Contact Cleaner -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-otros">
+          <div class="producto">
+            <span class="etiqueta">450ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Contact Cleaner" src="img-shop/9893-1.jpg" /></a>
+              <a href="#"><img alt="Contact Cleaner" src="img-shop/9893-1.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Contact Cleaner</h4>
+            <p class="producto-subtitulo">Limpia Contactos</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9893.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 11: M-40 Lubricant -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-otros">
+          <div class="producto">
+            <span class="etiqueta">400ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="M-40 Lubricant" src="img-shop/9892-M40-1.jpg" /></a>
+              <a href="#"><img alt="M-40 Lubricant" src="img-shop/9892-M40-2.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">M-40 Lubricant</h4>
+            <p class="producto-subtitulo">Lubricante multiuso</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9892.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 12: Benzine Ester Additive -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Benzine Ester Additive" src="img-shop/benzine-ester-additive.jpg" /></a>
+              <a href="#"><img alt="Benzine Ester Additive" src="img-shop/benzine-ester-additive.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Benzine Ester Additive</h4>
+            <p class="producto-subtitulo">Mejorador de Combustible</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9950.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 13: Benzine Octane Plus -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Benzine Octane Plus" src="img-shop/super-benzin.jpg" /></a>
+              <a href="#"><img alt="Benzine Octane Plus" src="img-shop/super-benzin.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Benzine Octane Plus</h4>
+            <p class="producto-subtitulo">Elevador de Octanaje</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9954.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 14: DPF Cleaner -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="DPF Cleaner" src="img-shop/dpfcleaner.jpg" /></a>
+              <a href="#"><img alt="DPF Cleaner" src="img-shop/dpfcleaner.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">DPF Cleaner</h4>
+            <p class="producto-subtitulo">-</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9958.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 15: Ester Additive -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-lubri">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Ester Additive" src="img-shop/ester-additive.jpg" /></a>
+              <a href="#"><img alt="Ester Additive" src="img-shop/ester-additive.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Ester Additive</h4>
+            <p class="producto-subtitulo">Elevador de lubricante</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9929.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 16: Burning Booster -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Burning Booster" src="img-shop/burning-booster.jpg" /></a>
+              <a href="#"><img alt="Burning Booster" src="img-shop/burning-booster.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Burning Booster</h4>
+            <p class="producto-subtitulo">Mejorador de Combustión</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9939.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 17: Motor Life Extender -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-lubri">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Motor Life Extender" src="img-shop/motor_life_extender.jpg" /></a>
+              <a href="#"><img alt="Motor Life Extender" src="img-shop/motor_life_extender.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Motor Life Extender</h4>
+            <p class="producto-subtitulo">-</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9943.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 18: Diesel Jet Cleaner (segunda) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">400ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Diesel Jet Cleaner" src="img-shop/jet_cleaner_diesel.jpg" /></a>
+              <a href="#"><img alt="Diesel Jet Cleaner" src="img-shop/jet_cleaner_diesel.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Diesel Jet Cleaner</h4>
+            <p class="producto-subtitulo">-</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9956.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 19: Diesel Ester Additive -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">500ml</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Diesel Ester Additive" src="img-shop/9930.png" /></a>
+              <a href="#"><img alt="Diesel Ester Additive" src="img-shop/9930.png" /></a>
+            </div>
+            <h4 class="producto-titulo">Diesel Ester Additive</h4>
+            <p class="producto-subtitulo">-</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9930.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- Producto 20: Injector Cleaner (segunda, Proximamente) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="pf-carb">
+          <div class="producto">
+            <span class="etiqueta">¡Proximamente!</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Injector Cleaner" src="img-shop/9957.jpg" /></a>
+              <a href="#"><img alt="Injector Cleaner" src="img-shop/9957.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Injector Cleaner</h4>
+            <p class="producto-subtitulo">-</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/9957.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal para Ficha Técnica -->
+  <div aria-hidden="true" aria-labelledby="modalFichaLabel" class="modal fade" id="modalFicha" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFichaLabel">Ficha Técnica</h5>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img alt="Ficha Técnica" class="img-fluid" id="imagenFicha" src="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/global.js"></script>
+
+</body>
+</html>

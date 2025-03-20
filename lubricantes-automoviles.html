@@ -1,346 +1,405 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Productos - Mannol Argentina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/global.css" rel="stylesheet" />
-    <link href="/css/header.css" rel="stylesheet" />
-    <link href="/css/footer.css" rel="stylesheet" />
-    <link href="/css/productos.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Lubricantes - Mannol Argentina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/global.css" rel="stylesheet" />
+  <link href="/css/header.css" rel="stylesheet" />
+  <link href="/css/footer.css" rel="stylesheet" />
+  <link href="/css/productos.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div id="header"></div> <!-- Carga el header -->
-    <!-- 🔹 Banner de Productos -->
-    <section class="banner-productos d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-start">
-                    <h1 class="titulo-banner">LUBRICANTES</h1>
-                    <p class="subtitulo-banner">
-                        AUTOMÓVILES, CAMIONETAS, UTILITARIOS, SUV Y CAMIONES
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 🔹 Menú de Categorías -->
-    <section class="productos-container">
-        <div class="container">
-            <ul class="productos-menu">
-                <li><a class="active" data-filter="all" href="#">Lubricante Automóvil</a></li>
-                <li><a data-filter="mineral" href="#">Mineral</a></li>
-                <li><a data-filter="semi-sintetico" href="#">Semi-sintético</a></li>
-                <li><a data-filter="sintetico" href="#">Sintético</a></li>
-            </ul>
-        </div>
-    </section>
-    <!-- 🔹 Grilla de Productos -->
-    <section class="productos-container">
-        <div class="container">
-            <div class="row productos-lista">
-                <div class="col-md-3 producto-item mb-4" data-category="mineral">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Universal 15W-40" src="img-shop/universal-15w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Universal 15W-40</h4>
-                        <p class="producto-subtitulo">API SG/CD</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7405.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="mineral">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Safari 20W-50" src="img-shop/safari-20w-50-1l.jpg" />
-                        <h4 class="producto-titulo">Safari 20W-50</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7404.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="mineral">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="TS-1 SHPD 15W-40" src="img-shop/ts-1-15w-40-20l.jpg" />
-                        <h4 class="producto-titulo">TS-1 SHPD 15W-40</h4>
-                        <p class="producto-subtitulo">API CH-4/CG-4/CF-4/SL</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7101.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="mineral">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="TS-4 SHPD 15W-40" src="img-shop/ts-4-15w-40-20l.jpg" />
-                        <h4 class="producto-titulo">TS-4 SHPD 15W-40</h4>
-                        <p class="producto-subtitulo">API CI-4/CH-4/CG-4/CF-4/CF/SL</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7104.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Classic 10W-40" src="img-shop/classic-10w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Classic 10W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7501.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Classic 10W-40" src="img-shop/classic-10w-40-20l.jpg" />
-                        <h4 class="producto-titulo">Classic 10W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7501.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Classic 10W-40" src="img-shop/classic-10w-40-4l.jpg" />
-                        <h4 class="producto-titulo">Classic 10W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7501.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Diesel Extra 10W-40" src="img-shop/diesel-extra-10w-40-20l.jpg" />
-                        <h4 class="producto-titulo">Diesel Extra 10W-40</h4>
-                        <p class="producto-subtitulo">API CH-4/SL</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7504.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Favorit 15W-50" src="img-shop/favorit-15w-50-1l.jpg" />
-                        <h4 class="producto-titulo">Favorit 15W-50</h4>
-                        <p class="producto-subtitulo">API SL/CF-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7510.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Molibden Diesel 10W-40" src="img-shop/molibden-diesel-10w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Molibden Diesel 10W-40</h4>
-                        <p class="producto-subtitulo">API CG-4/SL</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7506.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="semi-sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Molibden Benzin 10W-40" src="img-shop/molibden-benzin-10w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Molibden Benzin 10W-40</h4>
-                        <p class="producto-subtitulo">API SL/CF</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7505.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Elite 5W-40" src="img-shop/elite-5w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Elite 5W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7903.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Elite 5W-40" src="img-shop/elite-5w-40-60l-new.jpg" />
-                        <h4 class="producto-titulo">Elite 5W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7903.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Energy Ultra JP 5W-20" src="img-shop/energy-jp-5w-20-1l.jpg" />
-                        <h4 class="producto-titulo">Energy Ultra JP 5W-20</h4>
-                        <p class="producto-subtitulo">API SN - ILSAC GF-5</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7906.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Energy Formula PD 5W-40" src="img-shop/energy-pd-5w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Energy Formula PD 5W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7913.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Energy 5W-30" src="img-shop/energy5l.jpg" />
-                        <h4 class="producto-titulo">Energy 5W-30</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7511.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Energy Premium 5W-30" src="img-shop/energy-premium-5w-30-1l.jpg" />
-                        <h4 class="producto-titulo">Energy Premium 5W-30</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7908.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Racing+Ester 10W-60" src="img-shop/racing-ester-10w-60-1l.jpg" />
-                        <h4 class="producto-titulo">Racing+Ester 10W-60</h4>
-                        <p class="producto-subtitulo">API SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7902.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Legend+Ester 0W-40" src="img-shop/legend-0w-40-1l.jpg" />
-                        <h4 class="producto-titulo">Legend+Ester 0W-40</h4>
-                        <p class="producto-subtitulo">SN/CH-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7901.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="TS-7 UHPD Blue 10W-40" src="img-shop/ts-7-10w-40-20l.jpg" />
-                        <h4 class="producto-titulo">TS-7 UHPD Blue 10W-40</h4>
-                        <p class="producto-subtitulo">API CK-4/CJ-4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7107.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Legend Ultra 0W-20" src="img-shop/MN7918-1.jpg" />
-                        <h4 class="producto-titulo">Legend Ultra 0W-20</h4>
-                        <p class="producto-subtitulo">API SN Plus RC - ILSAC GF-5</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7918.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Energy Combi LL 5W-30" src="img-shop/MN7907-1.jpg" />
-                        <h4 class="producto-titulo">Energy Combi LL 5W-30</h4>
-                        <p class="producto-subtitulo">API SN/CF - ACEA C3</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7907.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3 producto-item mb-4" data-category="sintetico">
-                    <div class="producto">
-                        <span class="etiqueta">1L - 4L</span>
-                        <img alt="Extreme 5W-40" src="img-shop/MN7915-1.jpg" />
-                        <h4 class="producto-titulo">Extreme 5W-40</h4>
-                        <p class="producto-subtitulo">API SN/CH-4 - ACEA A3/B4</p>
-                        <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal"
-                            data-imagen="tecnica/7915.jpg">
-                            📄 Ficha Técnica
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 🔹 Modal de Ficha Técnica -->
-    <div aria-hidden="true" aria-labelledby="modalFichaLabel" class="modal fade" id="modalFicha" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalFichaLabel">Ficha Técnica</h5>
-                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <img alt="Ficha Técnica" class="img-fluid" id="imagenFicha" src="" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer"></div> <!-- Carga el footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/footer.js"></script>
-    <script src="/js/header.js"></script>
-    <script src="/js/global.js"></script>
-</body>
+  <div id="header"></div> <!-- Carga el header -->
 
+  <!-- 🔹 Banner de Productos -->
+  <section class="banner-productos d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-start">
+          <h1 class="titulo-banner">LUBRICANTES</h1>
+          <p class="subtitulo-banner">AUTOMÓVILES, CAMIONETAS, UTILITARIOS, SUV Y CAMIONES</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Menú de Categorías -->
+  <section class="productos-container">
+    <div class="container">
+      <ul class="productos-menu">
+        <li><a class="active" data-filter="all" href="#">Lubricante Automóvil</a></li>
+        <li><a data-filter="mineral" href="#">Mineral</a></li>
+        <li><a data-filter="semi-sintetico" href="#">Semi-sintético</a></li>
+        <li><a data-filter="sintetico" href="#">Sintético</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 🔹 Grilla de Productos -->
+  <section class="productos-container">
+    <div class="container">
+      <div class="row productos-lista">
+
+        <!-- PRODUCTO 1: Universal 15W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="mineral">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Universal 15W-40 1Lts" src="img-shop/universal-15w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Universal 15W-40 4Lts" src="img-shop/universal-15w-40.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Universal 15W-40</h4>
+            <p class="producto-subtitulo">API SG/CD</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7405.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 2: Safari 20W-50 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="mineral">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Safari 20W-50 1Lts" src="img-shop/safari-20w-50-1l.jpg" /></a>
+              <a href="#"><img alt="Safari 20W-50 4Lts" src="img-shop/safari-20w-50.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Safari 20W-50</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7404.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 3: TS-1 SHPD 15W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="mineral">
+          <div class="producto">
+            <span class="etiqueta">20L - 208L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="TS-1 SHPD 15W-40 20Lts" src="img-shop/ts-1-15w-40-20l.jpg" /></a>
+              <a href="#"><img alt="TS-1 SHPD 15W-40 208Lts" src="img-shop/ts-1-15w-40-208l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">TS-1 SHPD 15W-40</h4>
+            <p class="producto-subtitulo">API CH-4/CG-4/CF-4/SL</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7101.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 4: TS-4 SHPD 15W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="mineral">
+          <div class="producto">
+            <span class="etiqueta">20L - 208L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="TS-4 SHPD 15W-40 20Lts" src="img-shop/ts-4-15w-40-20l.jpg" /></a>
+              <a href="#"><img alt="TS-4 SHPD 15W-40 208Lts" src="img-shop/ts-4-15w-40-208l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">TS-4 SHPD 15W-40</h4>
+            <p class="producto-subtitulo">API CI-4/CH-4/CG-4/CF-4/CF/SL</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7104.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 5: Classic 10W-40 (1L - 5L) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Classic 10W-40 1Lts" src="img-shop/classic-10w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Classic 10W-40 5Lts" src="img-shop/classic-10w-40-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Classic 10W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7501.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 6: Classic 10W-40 (20L) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">20L</span>
+            <div class="producto-imagen">
+              <!-- Solo una imagen -->
+              <a href="#"><img alt="Classic 10W-40 20Lts" src="img-shop/classic-10w-40-20l.jpg" /></a>
+              <a href="#"><img alt="Classic 10W-40 20Lts" src="img-shop/classic-10w-40-20l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Classic 10W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7501.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 7: Classic 10W-40 (1L - 4L) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <!-- Solo una imagen (4L) -->
+              <a href="#"><img alt="Classic 10W-40 4Lts" src="img-shop/classic-10w-40-4l.jpg" /></a>
+              <a href="#"><img alt="Classic 10W-40 4Lts" src="img-shop/classic-10w-40-4l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Classic 10W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7501.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 8: Diesel Extra 10W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">20L - 208L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Diesel Extra 10W-40 20Lts" src="img-shop/diesel-extra-10w-40-20l.jpg" /></a>
+              <a href="#"><img alt="Diesel Extra 10W-40 208Lts" src="img-shop/diesel-extra-10w-40-208l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Diesel Extra 10W-40</h4>
+            <p class="producto-subtitulo">API CH-4/SL</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7504.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 9: Favorit 15W-50 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L - 20L - 208L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Favorit 15W-50 1Lts" src="img-shop/favorit-15w-50-1l.jpg" /></a>
+              <a href="#"><img alt="Favorit 15W-50 5Lts" src="img-shop/favorit-15w-50-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Favorit 15W-50</h4>
+            <p class="producto-subtitulo">API SL/CF-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7510.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 10: Molibden Diesel 10W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Molibden Diesel 10W-40 1Lts" src="img-shop/molibden-diesel-10w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Molibden Diesel 10W-40 5Lts" src="img-shop/molibden-diesel-10w-40-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Molibden Diesel 10W-40</h4>
+            <p class="producto-subtitulo">API CG-4/SL</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7506.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 11: Molibden Benzin 10W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="semi-sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Molibden Benzin 10W-40 1Lts" src="img-shop/molibden-benzin-10w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Molibden Benzin 10W-40 4Lts" src="img-shop/molibden-benzin-10w-40-4l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Molibden Benzin 10W-40</h4>
+            <p class="producto-subtitulo">API SL/CF</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7505.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 12: Elite 5W-40 (1L - 5L) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Elite 5W-40 1Lts" src="img-shop/elite-5w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Elite 5W-40 5Lts" src="img-shop/elite-5w-40-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Elite 5W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7903.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 13: Elite 5W-40 (60L - 208L) -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">60L - 208L</span>
+            <div class="producto-imagen">
+              <!-- Solo una imagen -->
+              <a href="#"><img alt="Elite 5W-40 60Lts" src="img-shop/elite-5w-40-60l-new.jpg" /></a>
+              <a href="#"><img alt="Elite 5W-40 60Lts" src="img-shop/elite-5w-40-60l-new.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Elite 5W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7903.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 14: Energy Ultra JP 5W-20 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Energy Ultra JP 5W-20 1Lts" src="img-shop/energy-jp-5w-20-1l.jpg" /></a>
+              <a href="#"><img alt="Energy Ultra JP 5W-20 4Lts" src="img-shop/energy-jp-5w-20-4l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Energy Ultra JP 5W-20</h4>
+            <p class="producto-subtitulo">API SN - ILSAC GF-5</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7906.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 15: Energy Formula PD 5W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Energy Formula PD 5W-40 1Lts" src="img-shop/energy-pd-5w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Energy Formula PD 5W-40 5Lts" src="img-shop/energy-pd-5w-40-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Energy Formula PD 5W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7913.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 16: Energy 5W-30 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">5Lts</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Energy 5W-30 5Lts" src="img-shop/energy5l.jpg" /></a>
+              <a href="#"><img alt="Energy 5W-30 5Lts" src="img-shop/energy5l.jpg" /></a>
+              
+            </div>
+            <h4 class="producto-titulo">Energy 5W-30</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7511.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 17: Energy Premium 5W-30 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Energy Premium 5W-30 1Lts" src="img-shop/energy-premium-5w-30-1l.jpg" /></a>
+              <a href="#"><img alt="Energy Premium 5W-30 5Lts" src="img-shop/energy-premium-5w-30-5l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Energy Premium 5W-30</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7908.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 18: Racing+Ester 10W-60 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Racing+Ester 10W-60 1Lts" src="img-shop/racing-ester-10w-60-1l.jpg" /></a>
+              <a href="#"><img alt="Racing+Ester 10W-60 4Lts" src="img-shop/racing-ester-10w-60-4l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Racing+Ester 10W-60</h4>
+            <p class="producto-subtitulo">API SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7902.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 19: Legend+Ester 0W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Legend+Ester 0W-40 1Lts" src="img-shop/legend-0w-40-1l.jpg" /></a>
+              <a href="#"><img alt="Legend+Ester 0W-40 4Lts" src="img-shop/legend-0w-40-4l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Legend+Ester 0W-40</h4>
+            <p class="producto-subtitulo">SN/CH-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7901.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 20: TS-7 UHPD Blue 10W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">20L - 208L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="TS-7 UHPD Blue 10W-40 20Lts" src="img-shop/ts-7-10w-40-20l.jpg" /></a>
+              <a href="#"><img alt="TS-7 UHPD Blue 10W-40 208Lts" src="img-shop/ts-7-10w-40-208l.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">TS-7 UHPD Blue 10W-40</h4>
+            <p class="producto-subtitulo">API CK-4/CJ-4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7107.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 21: Legend Ultra 0W-20 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Legend Ultra 0W-20 1Lts" src="img-shop/MN7918-1.jpg" /></a>
+              <a href="#"><img alt="Legend Ultra 0W-20 4Lts" src="img-shop/MN7918-4.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Legend Ultra 0W-20</h4>
+            <p class="producto-subtitulo">API SN Plus RC - ILSAC GF-5</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7918.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 22: Energy Combi LL 5W-30 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 4L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Energy Combi LL 5W-30 1Lts" src="img-shop/MN7907-1.jpg" /></a>
+              <a href="#"><img alt="Energy Combi LL 5W-30 4Lts" src="img-shop/MN7907-4.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Energy Combi LL 5W-30</h4>
+            <p class="producto-subtitulo">API SN/CF - ACEA C3</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7907.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+        <!-- PRODUCTO 23: Extreme 5W-40 -->
+        <div class="col-6 col-md-3 producto-item mb-4" data-category="sintetico">
+          <div class="producto">
+            <span class="etiqueta">1L - 5L</span>
+            <div class="producto-imagen">
+              <a href="#"><img alt="Extreme 5W-40 1Lts" src="img-shop/MN7915-1.jpg" /></a>
+              <a href="#"><img alt="Extreme 5W-40 5Lts" src="img-shop/MN7915-5.jpg" /></a>
+            </div>
+            <h4 class="producto-titulo">Extreme 5W-40</h4>
+            <p class="producto-subtitulo">API SN/CH-4 - ACEA A3/B4</p>
+            <button class="producto-ficha" data-bs-target="#modalFicha" data-bs-toggle="modal" data-imagen="tecnica/7915.jpg">📄 Ficha Técnica</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Modal de Ficha Técnica -->
+  <div aria-hidden="true" aria-labelledby="modalFichaLabel" class="modal fade" id="modalFicha" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFichaLabel">Ficha Técnica</h5>
+          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img alt="Ficha Técnica" class="img-fluid" id="imagenFicha" src="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div> <!-- Carga el footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/global.js"></script>
+  <script>
+    // Asigna la imagen correspondiente al modal cuando se hace clic en el botón de ficha técnica
+    document.querySelectorAll('.producto-ficha').forEach(button => {
+      button.addEventListener('click', function() {
+        const imagen = this.getAttribute('data-imagen');
+        document.getElementById('imagenFicha').setAttribute('src', imagen);
+      });
+    });
+  </script>
+</body>
 </html>

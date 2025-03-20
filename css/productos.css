@@ -5,9 +5,24 @@
  
 }
 
+.producto-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .producto-item.hidden {
+    opacity: 0;
+    transform: translateY(20px); /* se desplaza 20px hacia abajo */
+  }
+  
+  
+  
+
 /* 🔹 Banner de Productos */
 .banner-productos {
-    background: url('/imagenes/banner-productos.png') no-repeat center center;
+    position: relative; /* Necesario para que el pseudo-elemento se posicione relativo al contenedor */
+    background: url('/imagenes/Metalas-2 (1).jpg') no-repeat center center;
     background-size: cover;
     color: var(--color-amarillo);
     min-height: 50vh; /* Ajusta la altura del banner */
@@ -15,14 +30,33 @@
     align-items: center; /* Centra verticalmente el contenido */
 }
 
+/* Pseudo-elemento para la capa oscurecedora */
+.banner-productos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa negra al 50% de opacidad */
+    z-index: 1; /* Se coloca detrás del contenido */
+}
+
+/* Asegura que el contenido se muestre sobre la capa oscura */
+.banner-productos > * {
+    position: relative;
+    z-index: 2;
+}
+
+
 /* 🔹 Contenido dentro del banner */
 .titulo-banner {
 	color: #F4C200;
 	text-shadow: 0px 4px 10px rgba(36, 47, 77, 0.50);
 	
-	font-size: 64px;
+	font-size: 6rem;
 	font-style: normal;
-	font-weight: 900;
+	
 	
 	text-transform: uppercase;
 }
@@ -114,16 +148,16 @@ section.productos-container {
 
 .producto-titulo {
     font-size: 1.2rem;
-    font-weight: 900;
+    font-weight: normal;
     margin-top: 10px;
 	color: var(--color-azul);
-	text-align: left;
+	text-align: center;
 }
 
 .producto-subtitulo {
     color: #FFC107;
     font-weight: 900;
-	text-align: left;
+	text-align: center;
 }
 
 .producto-ficha {
@@ -144,7 +178,7 @@ section.productos-container {
     font-size: 0.9rem;
     font-weight: bold;
     position: absolute;
- 
+    z-index: 99;
     border-radius: 3px;
 }
 
@@ -152,7 +186,41 @@ section.productos-container {
     max-width: 63vh;
 }
 
-
+.producto-imagen {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Primera imagen: la imagen inicial */
+  .producto-imagen a:first-of-type img {
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Segunda imagen: la imagen para el hover */
+  .producto-imagen a:last-of-type img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  
+  /* Al pasar el mouse sobre el contenedor, se oculta la primera imagen y aparece la segunda */
+  .producto-imagen:hover a:first-of-type img {
+    opacity: 0;
+  }
+  
+  .producto-imagen:hover a:last-of-type img {
+    opacity: 1;
+  }
+  /* Si solo hay una imagen, forzar opacidad 1 */
+  .producto-imagen a:only-child img {
+    opacity: 1 !important;
+  }
 /* 🔹 Media Queries para hacerlo responsive */
 @media (max-width: 992px) {
     .titulo-banner {
@@ -161,6 +229,20 @@ section.productos-container {
 
     .subtitulo-banner {
         font-size: 1.2rem;
+    }
+    .productos-menu a{
+        font-size: 14px;
+    }
+
+    .productos-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        
+      }
+
+    li{
+        border: 1px solid var(--color-azul);
     }
 }
 
