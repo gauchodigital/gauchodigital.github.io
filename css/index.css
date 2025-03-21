@@ -623,6 +623,8 @@ span.boton-texto {
     display: none;
   }
 
+ 
+
 /* 📱 Mobile - Mostrar siempre el texto */
 @media (max-width: 1200px) {
     .botones-pista {
