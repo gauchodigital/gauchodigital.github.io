@@ -303,21 +303,34 @@
     margin-top: 40px;
     
 }
-.boton-personalizado-azul{
-    background-color: transparent;
+.boton-personalizado-azul {
+    background-color: transparent; /* Fondo transparente por defecto */
     transform: skewX(-15deg);
-    padding: 5px 30px ;
-    border: 3px solid var(--color-azul);
-    
+    padding: 5px 30px;
+    border: 3px solid var(--color-azul); /* Borde azul */
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Agregamos transición de color */
 }
-.boton-personalizado-azul a{
-    color: var(--color-azul);
+
+.boton-personalizado-azul a {
+    color: var(--color-azul); /* Letra azul por defecto */
     text-decoration: none;
     font-weight: bold;
-   
+    display: block;
     text-transform: uppercase;
     font-size: 24px;
+    transition: color 0.3s ease-in-out; /* Agregamos transición de color */
 }
+
+.boton-personalizado-azul:hover {
+    background-color: var(--color-azul); /* Ahora el hover cambia el fondo a azul */
+}
+
+.boton-personalizado-azul:hover a {
+    color: #fff; /* Ahora el texto se vuelve blanco en hover */
+}
+
+
 
 /* Orgullosos de acompañar a los mejores en la pista */
 
@@ -464,12 +477,22 @@
     text-align: left;
     border-radius: 5px;
     max-width: 250px;
+
 }
+.tooltip.tooltip-grande .tooltip-inner {
+    max-width: 440px !important;
+    font-size: 20px !important;
+    padding: 16px !important;
+}
+
+
+
 
 /* 🔹 Ocultar la flecha del tooltip */
 .tooltip-arrow {
     display: none !important;
 }
+
 
 
 .botones-pista{
@@ -609,6 +632,48 @@ span.boton-texto {
     transform: scale(1.03);
 }
 
+.instagram-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 700px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.05);
+}
+.instagram-item {
+    display: flex;
+    justify-content: center;
+    
+    overflow: hidden;
+    height: 100%; /* Ocupa toda la altura */
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene la proporción y ajusta la imagen */
+}
+
+/* Asegurar que todas las columnas tengan la misma altura */
+.row {
+    display: flex;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* 🔹 Nombre de usuario */
 .instagram-username {
     font-size: 2rem;
@@ -637,10 +702,10 @@ span.boton-texto {
 }
 @media (max-width: 1200px) {
     .botones-mobile {
-      display: block; /* Ahora sí aparece en mobile */
+      display: block; 
       width: 100%;
-      max-width: 800px; /* Ajusta según tu gusto */
-      margin: 0 auto;   /* Centra el contenido */
+      max-width: 800px; 
+      margin: 0 auto;   
       padding: 20px;
      
       background-size: cover;
@@ -706,7 +771,11 @@ span.boton-texto {
     }
 }
 
-
+@media (max-width: 1440px){
+    .boton-texto {
+        font-size: 1rem !important;
+    }
+}
 
 /* 🔹 Media Query para pantallas menores a 1140px */
 @media (max-width: 1140px) {
@@ -714,7 +783,7 @@ span.boton-texto {
         z-index: 99;
     }
 
-
+   
 
     .titulo-instagram{
         align-items: flex-start;

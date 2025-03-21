@@ -1,42 +1,162 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Quienes Somos - Mannol Argentina</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/global.css" rel="stylesheet" />
-    <link href="/css/header.css" rel="stylesheet" />
-    <link href="/css/footer.css" rel="stylesheet" />
-    <link href="/css/productos.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Contacto - Mannol Argentina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/global.css" rel="stylesheet" />
+  <link href="/css/header.css" rel="stylesheet" />
+  <link href="/css/footer.css" rel="stylesheet" />
+  <link href="/css/quienes-somos.css" rel="stylesheet" />
 </head>
-
 <body>
     <div id="header"></div> <!-- Carga el header -->
-    <!-- 🔹 Banner de Productos -->
-    <section class="banner-productos d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-start">
-                    <h1 class="titulo-banner">LUBRICANTES</h1>
-                    <p class="subtitulo-banner">
-                        AUTOMÓVILES, CAMIONETAS, UTILITARIOS, SUV Y CAMIONES
+
+    <!-- 🔹 Banner de quienes somos -->
+    <section class="banner-quienes-somos d-flex align-items-center text-start">
+        <video autoplay muted loop playsinline class="background-video">
+        <source src="/video/fabrica-comprimido.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+        </video>
+    
+        <div class="video-overlay"></div> <!-- 🔹 Capa oscura -->
+    
+        <div class="container-fluid p-5 position-relative z-1">
+        <div class="row">
+            <div class="col-md-12 text-start">
+            <h1 class="titulo-banner text-uppercase">Quienes somos</h1>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+
+    <section class="p-5">
+        <div class="container container-custom">
+            <div class="row align-items-start">
+                
+                <!-- Columna Izquierda: Imagen -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                <img src="/imagenes/Group 293.png" alt="Lubricantes Mannol" class="img-fluid d-block mx-auto" width="100%" />
+                </div>
+                
+                <!-- Columna Derecha: Texto -->
+                <div class="col-md-6 texto-custom d-flex flex-column gap-3">
+
+                    <h2 class="mb-3 color-azul">CALIDAD ALEMANA, <br> <span class="resaltado">PRESENCIA GLOBAL</span> </h2>
+                    <p>
+                        Mannol es una marca alemana de lubricantes presente en más de 92 países 
+                        y 5 continentes.
+                    </p>
+                    <p>
+                        <strong>Reconocida por su innovación, tecnología avanzada y diseño moderno, Mannol 
+                            ofrece una amplia gama de lubricantes y productos para el cuidado del vehículo, 
+                            con estándares de calidad certificados por OEM.</strong> 
                     </p>
                 </div>
+                
             </div>
+        </div>
+    
+
+
+    </section>
+
+    <section class="p-5">
+        <div class="container container-custom ">
+        <div class="row">
+            <!-- Imagen centrada con el mismo ancho -->
+            <div class="col-12">
+            <img src="/imagenes/Rectangle-quienes-somos.png" alt="Lubricantes Mannol" class="img-fluid d-block mx-auto" width="100%"/>
+            </div>
+        </div>
         </div>
     </section>
 
-    
-    
 
-    <div id="footer"></div> <!-- Carga el footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/Footer.js"></script>
-    <script src="/js/header.js"></script>
-    <script src="/js/global.js"></script>
+    <section class="p-5 text-center">
+        <div class="container container-custom texto-custom d-flex flex-column gap-3">
+        
+        <!-- Título -->
+        <h2 class="mb-3 color-azul ">
+            <strong>CALIDAD ALEMANA, <span class="resaltado">COMPROMISO LOCAL</span></strong>
+        </h2>
+    
+        <!-- Texto descriptivo -->
+        <p>
+            En Argentina, Mannol está representada por <strong>RS Lubricantes</strong>, una empresa con 
+            <strong>más de 20 años de trayectoria</strong> en la comercialización de lubricantes, grasas y aditivos.
+        </p>
+        
+        <p>
+            Gracias a nuestra red de distribución nacional y un equipo altamente capacitado, 
+            llevamos la excelencia de <strong>Mannol a cada rincón del país.</strong>
+        </p>
+    
+        <!-- Números Destacados -->
+        <div class="row text-center mt-4 texto-centrado">
+            <div class="col-md-4">
+            <h3 class="fw-bold color-azul">20+</h3>
+            <p><strong>años de experiencia</strong></p>
+            </div>
+            <div class="col-md-4">
+            <h3 class="fw-bold color-azul">20+</h3>
+            <p><strong>años de experiencia</strong></p>
+            </div>
+            <div class="col-md-4">
+            <h3 class="fw-bold color-azul">20+</h3>
+            <p><strong>años de experiencia</strong></p>
+            </div>
+        </div>
+    
+        </div>
+  </section>
+
+  
+    <!-- 🔹 Sección con Video de Fondo -->
+    <section class="banner-quienes-somos d-flex align-items-center text-center text-md-start">
+
+        <!-- Video de Fondo -->
+        <video autoplay muted loop playsinline class="background-video">
+        <source src="/video/fabrica-comprimido.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+        </video>
+
+        <!-- Capa Oscura -->
+        <div class="video-overlay"></div>
+
+        <!-- Contenido -->
+        <div class="container-fluid p-5 position-relative z-1">
+        <div class="row">
+            <div class="col-md-8 texto-custom">
+            <h2 class="mb-3 text-white">
+                LUBRICANTES CON <span class="resaltado">TECNOLOGÍA ESTER</span>
+            </h2>
+            <p class="text-white">
+                Mannol integra la <strong>avanzada Tecnología ESTER</strong> en sus productos, logrando 
+                estándares de calidad superiores. Proporciona mayor estabilidad térmica, 
+                protección contra el desgaste y un rendimiento excepcional.
+            </p>
+            <a href="#" class="btn btn-outline-light btn-lg mt-3">
+                CONOCÉ MÁS SOBRE LA TECNOLOGÍA ESTER
+            </a>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    
+  
+
+
+  <div id="footer"></div> <!-- Carga el footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/header.js"></script>
+  <script src="/js/global.js"></script>
+
 </body>
-
 </html>

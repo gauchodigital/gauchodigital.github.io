@@ -188,7 +188,7 @@
     display: flex;
     align-items: center;
     z-index: 1000; /* Para que quede arriba del contenido */
-    
+    cursor: pointer;
     padding-right: 45px;
     justify-content: center;
 }

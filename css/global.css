@@ -38,21 +38,36 @@ p {
 .centrado{
     text-align: center;
 }
-.boton-personalizado{
-   background-color: var(--color-amarillo);
+.boton-personalizado {
+    background-color: var(--color-amarillo);
     transform: skewX(-15deg);
-    padding: 5px 30px ;
+   
     border: none;
-    
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
 }
-.boton-personalizado a{
+
+
+.boton-personalizado a {
     color: var(--color-azul);
     text-decoration: none;
     font-weight: bold;
-    
     text-transform: uppercase;
     font-size: 24px;
+    display: block; 
+    
+    transition: color 0.3s ease-in-out;
 }
+
+
+.boton-personalizado:hover {
+    background-color: var(--color-azul);
+}
+
+.boton-personalizado:hover a {
+    color: var(--color-amarillo);
+}
+  
 .slider-centrado{
     display: flex;
     flex-direction: column;
@@ -66,6 +81,10 @@ p {
 
 .footer{
     
+}
+
+.color-azul{
+    color: var(--color-azul);
 }
 
 @media only screen and (max-width: 1100px) {
