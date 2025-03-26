@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Modifica el tamaño de los indicadores */
+:root {
+    --color-azul: #242F4C;  /* Azul  */
+    --color-amarillo: #F4C200; /* Amarillo */
+    --color-wsp: #40E45D;  /* verde */
+ 
+}
+
 .banner-quienes-somos {
     position: relative;
     min-height: 50vh;
@@ -42,12 +53,56 @@
     z-index: 2; /* Asegura que el contenido esté por encima del overlay */
   }
 
+  .row-custom {
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0; 
+    padding: 0 10%; 
+}
+.boton-personalizado-blanco {
+    background-color: transparent; 
+    transform: skewX(-25deg);
+    padding: 5px 30px;
+    border: 3px solid white; 
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+
+.boton-personalizado-blanco a {
+    color: var(--color-azul); 
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out; 
+    transform: skewX(25deg);
+}
+
+.boton-personalizado-blanco:hover {
+    background-color: var(--color-azul);
+}
+
+.boton-personalizado-blanco:hover a {
+    color: #fff; 
+}
+
+
 h2{
     font-size: 4rem;
 }
 h3{
     font-size: 5rem;
     
+}
+
+.row-custom {
+    max-width: 80%; 
+    margin: 0 auto; 
 }
 
 .container-custom{
@@ -62,8 +117,106 @@ h3{
     text-align: center;
 }
 
+.boton-personalizado {
+    background-color: #FFD300;
+    color: #242F4D;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
 
+.background-equipomannol{
+    background-image: url(/imagenes/background-equipomannol.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.text-yellow{
+    color: var(--color-amarillo);
+    font-family: 'Poppins';
+    
+}
 
+h4{
+    font-family: 'Poppins';
+}
+.valores-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 90%; /* Aumentamos el ancho */
+    margin: 0 auto;
+    gap: 30px; /* Espacio entre elementos */
+}
+
+.valor-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    min-height: 250px; /* Ajusta la altura mínima para evitar desalineaciones */
+}
+
+.valor-item img {
+    width: 80px; /* Fija el ancho de las imágenes */
+    height: 80px; /* Fija el alto para que todas sean iguales */
+    object-fit: contain; /* Evita deformaciones */
+    margin-bottom: 10px; /* Espacio entre imagen y título */
+}
+
+.valor-item h4 {
+    font-size: 1.2rem; /* Tamaño uniforme para los títulos */
+    margin-bottom: 10px; /* Espacio con el texto */
+}
+
+.valor-item p {
+    flex-grow: 1;
+    font-size: 1rem;
+    max-width: 250px; /* Limita la anchura del texto */
+    text-align: left;
+}
+.texto-blanco{
+    color:white
+}
+
+@media (max-width: 767px){
+    .valores-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+    .valor-item{
+    align-items: center;
+    }
+    .valor-item p{
+    text-align: center;
+    align-items: center;
+    }
+    .responsive{
+        padding: 30px 0px !important;
+        margin: 0px !important;
+    }
+    .boton-personalizado-blanco{
+        font-size: 13px;
+    }
+    .texto-custom p{
+        font-size: 13px;
+    }
+    .boton-personalizado a{
+        font-size: 14px;
+    }
+    .background-equipomannol{
+        background-image: url(/imagenes/back-responsive.png) !important;
+        background-size: 100vh;
+        
+        
+    }
+    
+}
 
 
 
@@ -72,7 +225,22 @@ h3{
     .titulo-banner{
         font-size: 4rem;
     }
-
+    .altura-personalizada{
+        padding: 70px 0px;
+    }
+    .texto-custom p{
+        font-size: 1rem;
+    }
+    .boton-personalizado a{
+      
+        font-size: 1rem;
+    }
+    .valor-item p{
+        text-align: center;
+        align-items: center;
+    }
+   
+    
 }
 
 @media (min-width: 992px) { /* Laptops */
@@ -80,6 +248,7 @@ h3{
     .titulo-banner{
         font-size: 5rem;
     }
+    
 
 }
 

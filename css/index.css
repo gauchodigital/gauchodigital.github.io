@@ -416,7 +416,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh; /* Altura suficiente para incluir el título */
+    height: 40rem; /* Altura suficiente para incluir el título */
     width: 100%;
     padding: 50px 20px;
 }
@@ -471,7 +471,7 @@
     background-color: transparent !important; /* Hace que el fondo sea transparente */
     color: white !important; /* Texto blanco */
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 300;
     padding: 12px;
     text-align: left;
@@ -480,9 +480,9 @@
 
 }
 .tooltip.tooltip-grande .tooltip-inner {
-    max-width: 440px !important;
-    font-size: 20px !important;
-    padding: 16px !important;
+    max-width: 350px;
+    
+    
 }
 
 
@@ -507,7 +507,7 @@
 }
 
 span.boton-texto {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 
@@ -774,6 +774,18 @@ span.boton-texto {
 @media (max-width: 1440px){
     .boton-texto {
         font-size: 1rem !important;
+    }
+    .tooltip-inner{
+        max-width: 200px;
+    }
+
+    .tooltip.tooltip-grande .tooltip-inner {
+        max-width: 300px;
+        
+        
+    }
+    .titulo-pista{
+        font-size: 3rem;
     }
 }
 
