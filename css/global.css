@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=30125,16015,16016,16017,16018,16019,16008,16020,16022,16007,16009,16021,15981,15983,15985,15986,15987,15990,16012,16014,15980,15982,15984,15988,15989,16006,16013,15991,15992,15993,15994,15996,15995,30126,30127,30124,30128,30134,30129,30136,15999,16010,30123,16011,30130,30131,30135,30132,15997,30133,15998,16005');
+
+                                    
 *{
     margin: 0px;
     padding: 0px;
@@ -13,15 +15,15 @@
 
 /* Definir Poppins como fuente principal */
 body {
-    font-family: "Black Ops One", system-ui;
+    font-family: "Helvetica Nuee", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
 /* Si quieres aplicar diferentes pesos */
 h1, h2, h3 {
-font-family: "Black Ops One", system-ui;
-  font-weight: 400;
+font-family: "Helvetica Nuee", system-ui;
+  font-weight: 900;
   font-style: normal;
     
 }
@@ -32,8 +34,8 @@ p {
 }
 .resaltado{
     color: var(--color-amarillo);
-    font-family: "Black Ops One", system-ui;
-    font-weight: normal;
+    font-family: "Helvetica Nuee", system-ui;
+    font-weight: 900;
 }
 .centrado{
     text-align: center;
