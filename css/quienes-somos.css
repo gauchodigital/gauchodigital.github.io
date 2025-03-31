@@ -61,7 +61,7 @@
 }
 .boton-personalizado-blanco {
     background-color: transparent; 
-    transform: skewX(-25deg);
+    transform: skewX(-25deg); /* Aplica el sesgado al contenedor */
     padding: 5px 30px;
     border: 3px solid white; 
     display: inline-block;
@@ -80,7 +80,9 @@
     text-transform: uppercase;
     font-size: 24px;
     transition: color 0.3s ease-in-out; 
-    transform: skewX(25deg);
+    transform: skewX(25deg); /* Revertimos el sesgado */
+    display: inline-block;
+    color: white;
 }
 
 .boton-personalizado-blanco:hover {
@@ -122,7 +124,7 @@ h3{
     color: #242F4D;
     padding: 10px 25px;
     font-weight: bold;
-    border-radius: 5px;
+    
     text-decoration: none;
     display: inline-block;
 }
@@ -156,7 +158,7 @@ h4{
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: flex-start;
     min-height: 250px; /* Ajusta la altura mínima para evitar desalineaciones */
 }
@@ -171,6 +173,7 @@ h4{
 .valor-item h4 {
     font-size: 1.2rem; /* Tamaño uniforme para los títulos */
     margin-bottom: 10px; /* Espacio con el texto */
+    text-align: center;
 }
 
 .valor-item p {
