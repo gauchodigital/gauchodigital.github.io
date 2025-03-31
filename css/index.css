@@ -375,10 +375,14 @@
     text-decoration: none;
     display: inline-block;
 }
-
+.boton-personalizado.white:hover{
+    color: white;
+}
 .img-container {
     position: static;
 }
+
+
 
 .img-pilotos {
     position: absolute;

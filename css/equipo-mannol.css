@@ -91,8 +91,17 @@
 .titulo-banner{
     font-size: 5rem;
     font-family: "Helvetica Nuee", system-ui;
-    color: white;
+    color: var(--color-amarillo);
     
+}
+.link-blanco {
+    color: white; /* Hace que el texto sea blanco */
+    text-decoration: none; /* Remueve la subrayado */
+    font-weight: bold; /* Mantiene el texto en negrita */
+}
+
+.link-blanco:hover {
+    color: #ddd; /* Cambia el color al pasar el mouse si querés un efecto */
 }
 
 @media (max-width: 768px) {
