@@ -45,7 +45,7 @@
 }
 
 .carousel-item h2{
-    font-size: 6rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: white;
     margin-top: 2vh;
@@ -775,6 +775,7 @@ span.boton-texto {
     .banner{
         flex-direction: column;
     }
+   
 }
 
 @media (max-width: 1440px){
