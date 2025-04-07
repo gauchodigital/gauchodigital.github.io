@@ -26,16 +26,16 @@
 
 .carousel-item {
     width: 100%;
-    height: 70vh; /* Ajusta la altura según lo que necesites */
-    background-size:cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    height: 60vh; /* Ajusta la altura según lo que necesites */
+    background-size:cover ;
+    background-position: center ;
+    background-repeat: no-repeat ;
     position: relative;
+   
     
     /* Aplica un gradiente radial sobre la imagen */
     
 
-    background-blend-mode: multiply;
 }
 
 .carousel-item .boton-personalizado{
