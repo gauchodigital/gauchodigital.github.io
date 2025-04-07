@@ -95,11 +95,14 @@
 
 
 h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h3{
     font-size: 5rem;
     
+}
+.descripcion{
+    font-size: 1.4rem;
 }
 
 .row-custom {
@@ -186,44 +189,30 @@ h4{
     color:white
 }
 
-@media (max-width: 767px){
-    .valores-container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       }
-    .valor-item{
-    align-items: center;
-    }
-    .valor-item p{
-    text-align: center;
-    align-items: center;
-    }
-    .responsive{
-        padding: 30px 0px !important;
-        margin: 0px !important;
-    }
-    .boton-personalizado-blanco{
-        font-size: 13px;
-    }
-    .texto-custom p{
-        font-size: 13px;
-    }
-    .boton-personalizado a{
-        font-size: 14px;
-    }
-    .background-equipomannol{
-        background-image: url(/imagenes/back-responsive.png) !important;
-        background-size: 100vh;
-        
-        
+@media (min-width: 1200px) { /* PC */
+
+    .titulo-banner{
+        font-size: 5rem;
     }
     
 }
 
+@media (min-width: 992px) { /* Laptops */
+
+    .titulo-banner{
+        font-size: 5rem;
+    }
+    
+
+}
 
 
-@media (min-width: 768px) { /* Tablets */
+
+
+
+
+
+/* @media (min-width: 768px) { 
 
     .titulo-banner{
         font-size: 4rem;
@@ -242,23 +231,53 @@ h4{
         text-align: center;
         align-items: center;
     }
+    .descripcion{
+        font-size: 1rem;
+    }
+
    
     
-}
-
-@media (min-width: 992px) { /* Laptops */
-
-    .titulo-banner{
-        font-size: 5rem;
+} */
+@media (max-width: 767px){
+    .valores-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+    .valor-item{
+    align-items: center;
+    }
+    .valor-item p{
+    text-align: center;
+    align-items: center;
+    }
+    .responsive{
+        padding: 30px 0px !important;
+        margin: 0px !important;
+    }
+    .boton-personalizado-blanco a{
+        font-size: 13px;
+    }
+    .texto-custom p{
+        font-size: 13px;
+    }
+    .boton-personalizado a{
+        font-size: 14px;
+    }
+    .background-equipomannol{
+        background-image: url(/imagenes/back-responsive.png) !important;
+        background-size: 100vh;
+        
+        
     }
     
-
-}
-
-@media (min-width: 1200px) { /* PC */
-
-    .titulo-banner{
-        font-size: 6rem;
+    .container-custom{
+        width: 100%;
+        max-width: 100%;
     }
+    .descripcion{
+        font-size: 1rem;
+    }
+    
     
 }

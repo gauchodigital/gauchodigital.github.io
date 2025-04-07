@@ -259,22 +259,33 @@
     .botones-flotantes-whatsapp{
         background-color: #40E45D;
         position: fixed;
-        bottom: 30px; /* Distancia del borde inferior */
+        bottom: 50px; /* Distancia del borde inferior */
         right: -10px; /* Distancia del borde derecho */
         display: flex;
         flex-direction: row ;
         gap: 10px; /* Espacio entre los botones */
         z-index: 1000; /* Para que quede arriba del contenido */
-        width: 221px;
+        width: auto;
         height: 50px;
         transform: skewX(-15deg);
     }
+    .botones-flotantes-whatsapp p{
+        display: none;
+    }
+
     .boton-whatsapp img {
         width: 30px;
     }
     
     .botones-flotantes{
         bottom:82px
+    }
+    span.d-block.d-md-none{
+        font-size: 13px;
+    }
+    .boton-whatsapp img{
+        height: auto;
+        width: 30px;
     }
 
 }

@@ -87,7 +87,7 @@
 .fuego-derecha {
     position: absolute;
     bottom: -200px; /* Ajusta la posición */
-    right: -20px; /* Ajusta la posición */
+    right: 0px; /* Ajusta la posición */
     max-width: 100%; /* Controla el tamaño */
     z-index: 2; /* Para que quede sobre la imagen del auto */
     pointer-events: none; /* Evita interacción */
@@ -107,21 +107,7 @@
     font-family: 'Poppins';
 }
 
-/* Tamaños responsivos */
-@media (min-width: 768px) { /* Tablets */
-    .titulo-arriba {
-        font-size: 1.5rem;
-    }
-    .titulo-abajo {
-        font-size: 1.5rem;
-    }
-    .titulo-banner{
-        font-size: 4rem;
-    }
-    .img-container{
-        display: none;
-    }
-}
+
 
 @media (min-width: 992px) { /* Laptops */
     .titulo-arriba {
@@ -156,9 +142,26 @@
     .fuego-derecha {
         position: absolute;
         bottom: -200px; /* Ajusta la posición */
-        right: -20px; /* Ajusta la posición */
+        right: 0px; /* Ajusta la posición */
         max-width: 100%; /* Controla el tamaño */
         z-index: 2; /* Para que quede sobre la imagen del auto */
         pointer-events: none; /* Evita interacción */
     }
+}
+/* Tamaños responsivos */
+@media (max-width: 768px) { /* Tablets */
+    .titulo-arriba {
+        font-size: 1.5rem;
+    }
+    .titulo-abajo {
+        font-size: 1.5rem;
+    }
+    .titulo-banner{
+        font-size: 4rem;
+    }
+    .fuego-derecha{
+        display: none;
+    }
+    
+    
 }

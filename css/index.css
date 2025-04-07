@@ -26,7 +26,7 @@
 
 .carousel-item {
     width: 100%;
-    height: 60vh; /* Ajusta la altura según lo que necesites */
+    height: 70vh; /* Ajusta la altura según lo que necesites */
     background-size:cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -241,10 +241,6 @@
     background-color: var(--color-azul);
 }
 
-@media (max-width: 900px){
-   
-}
-
 
 /* <!-- ¿No sabés qué lubricante elegir? --> */
 
@@ -295,7 +291,7 @@
     font-weight: 900;
 }
 .fondo-blanco{
-    background-color: white;;
+    background-color: white;
 }
 .descripcion {
     font-size: 1.4rem;
@@ -761,22 +757,7 @@ span.boton-texto {
     }
   }
 
-/* 🔹 Espaciado entre las tarjetas en versión responsive */
-@media (max-width: 768px) {
-    .blog-card {
-        margin-bottom: 20px; /* Espacio entre cada tarjeta */
-    }
-    .card-overlay {
-        margin-bottom: 20px; /* Espacio entre cada tarjeta */
-    }
-    .banner{
-        height: 300px;
-    }
-    .banner{
-        flex-direction: column;
-    }
-   
-}
+
 
 @media (max-width: 1440px){
     .boton-texto {
@@ -870,3 +851,46 @@ span.boton-texto {
 }
 
 
+/* 🔹 Espaciado entre las tarjetas en versión responsive */
+@media (max-width: 768px) {
+    .blog-card {
+        margin-bottom: 20px; /* Espacio entre cada tarjeta */
+    }
+    .card-overlay {
+        margin-bottom: 20px; /* Espacio entre cada tarjeta */
+    }
+    .banner{
+        height: 300px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .overlay-text{
+        font-size: 1rem;
+    }
+    .descripcion{
+        font-size: 1rem;
+    }
+    .titulo {
+       
+        
+    color: #FFC107; /* Amarillo */
+    
+    z-index: 20;
+    font-size: 2rem !important;
+    padding: 0px;
+       
+    }
+    .seccion-fabrica{
+        padding: 20px 0px;
+    }
+    .instagram-section{
+        padding: 20px;
+    }
+    .titulo-instagram{
+        font-size: 23px !important;
+    }
+    .instagram-icon{
+        width: 25px;
+    }
+}
