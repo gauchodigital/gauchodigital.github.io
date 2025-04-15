@@ -1,6 +1,6 @@
 .banner-contacto {
     position: relative; /* Necesario para que el pseudo-elemento se posicione relativo al contenedor */
-    background: url('/imagenes/contacto.png') no-repeat center center;
+    background: url('/imagenes/banner-nuevo-contacto.png') no-repeat center center;
     background-size: cover;
     color: var(--color-amarillo);
     min-height: 50vh; /* Ajusta la altura del banner */
