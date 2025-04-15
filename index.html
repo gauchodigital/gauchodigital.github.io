@@ -12,9 +12,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55?styles=30125,16015,16016,16017,16018,16019,16008,16020,16022,16007,16009,16021,15981,15983,15985,15986,15987,15990,16012,16014,15980,15982,15984,15988,15989,16006,16013,15991,15992,15993,15994,15996,15995,30126,30127,30124,30128,30134,30129,30136,15999,16010,30123,16011,30130,30131,30135,30132,15997,30133,15998,16005" rel="stylesheet">
-                
+    <!-- Leaflet CSS / link mapa-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/map.css" />
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WSP6NX9F');</script>
+    <!-- End Google Tag Manager -->
+    
+    
 </head>
 <body>
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSP6NX9F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
     <!-- Aquí se cargará el header -->
     <div id="header"></div> 
 
@@ -454,7 +472,13 @@
         </div>
     </div>
     
-    
+    <!-- <div class="row p-1 p-md-5 fondo-blanco">
+
+        <div id="map"></div>
+
+    </div> -->
+
+
 
     <div id="footer"></div>
 
@@ -463,6 +487,10 @@
 <script src="/js/Footer.js"></script>
 <script src="/js/header.js"></script>
 <script src="/js/global.js"></script>
+ <!-- Leaflet JS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <!-- Script del mapa -->
+ <script src="js/map.js"></script>
 
 </body>
 </html>

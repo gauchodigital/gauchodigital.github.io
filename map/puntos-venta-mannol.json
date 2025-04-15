@@ -1,0 +1,227 @@
+[
+  {
+    "name": "Autopartes Mitre",
+    "address": "Av Mitre 1650, Vicente Lopez, Buenos Aires, 1604",
+    "phone": "5491166936128",
+    "email": "ventas@autopartesmitre.com.ar",
+    "lat": -34.5317,
+    "lng": -58.4701,
+    "online": false
+  },
+  {
+    "name": "COULI",
+    "address": "Av. Alvarez Jonte 4309, CABA, 1417",
+    "phone": "11 37684012",
+    "email": "coulisa@fibertel.com.ar",
+    "lat": -34.6135,
+    "lng": -58.4879,
+    "online": false
+  },
+  {
+    "name": "FRATELLI FRANSE SRL",
+    "address": "Cap. Claudio Rosales 1658, El Palomar, B1685BGD",
+    "phone": "1132690550",
+    "email": "franse@franselng.com.ar",
+    "lat": -34.6147,
+    "lng": -58.5901,
+    "online": false
+  },
+  {
+    "name": "LubriMaster",
+    "address": "Av. Pres. Perón 1366, Haedo, B1706",
+    "phone": "1168051024",
+    "email": "vignoscr@gmail.com",
+    "lat": -34.6361,
+    "lng": -58.5891,
+    "online": false
+  },
+  {
+    "name": "NPcars Distribuidora Automotive",
+    "address": "Del Barco Centenera 1094, CABA, 1424",
+    "phone": "1136228678",
+    "email": "NPcars22@gmail.com",
+    "lat": -34.6243,
+    "lng": -58.4452,
+    "online": false
+  },
+  {
+    "name": "Distribuidora Sur Oil",
+    "address": "Centenario Uruguayo 2136, Lanus Este",
+    "phone": "1569917583 / 1166214182",
+    "email": "distribuidorasuroil@hotmail.com",
+    "lat": -34.7055,
+    "lng": -58.3957,
+    "online": false
+  },
+  {
+    "name": "MANTIS LUBRICANTES",
+    "address": "AV. VICTOEICA 1128, Moreno, 1744",
+    "phone": "1140424836",
+    "email": "",
+    "lat": -34.6499,
+    "lng": -58.7904,
+    "online": false
+  },
+  {
+    "name": "Viturro Speed",
+    "address": "Joaquin V Gonzalez 2337, Quilmes Oeste, 1879",
+    "phone": "1167348560",
+    "email": "Viturrospeed.com@gmail.com",
+    "lat": -34.7341,
+    "lng": -58.2638,
+    "online": false
+  },
+  {
+    "name": "Mannol Santa Fe",
+    "address": "Ruta 21 y San Nicolas, Alvear, Santa Fe, 2130",
+    "phone": "341-5112753",
+    "email": "ventas@filtrosagrotrans.com.ar",
+    "lat": -33.0261,
+    "lng": -60.6458,
+    "online": false
+  },
+  {
+    "name": "Mannol Lincoln",
+    "address": "Av. Leandro N. Alem 601, Lincoln",
+    "phone": "2355-448084 / 2355-553382",
+    "email": "ehp@hotmail.com",
+    "lat": -34.8664,
+    "lng": -61.5319,
+    "online": false
+  },
+  {
+    "name": "LDC Oil Distribuciones",
+    "address": "Arroyo 1575, Libertador San Martin, Entre Rios, 3103",
+    "phone": "343 4478018",
+    "email": "Lucasserviciomecanico@gmail.com",
+    "lat": -32.0655,
+    "lng": -60.5354,
+    "online": false
+  },
+  {
+    "name": "Nell Distribuciones",
+    "address": "Av. Colón 4026, Mar del Plata, 7600",
+    "phone": "(0223) 476-0378 | (0223) 476-0277",
+    "email": "nelldistribuciones@gmail.com",
+    "lat": -38.0001,
+    "lng": -57.5605,
+    "online": false
+  },
+  {
+    "name": "Mannol Coronel Suarez",
+    "address": "Uspallata 165, Coronel Suarez, 7540",
+    "phone": "2392-556290",
+    "email": "albanokessi@gmail.com",
+    "lat": -37.4564,
+    "lng": -61.9343,
+    "online": false
+  },
+  {
+    "name": "Repuestos Mayo",
+    "address": "25 de mayo 555, Bahía Blanca, 8000",
+    "phone": "2915747188",
+    "email": "ventas@repuestosmayo.com.ar",
+    "lat": -38.7196,
+    "lng": -62.2655,
+    "online": false
+  },
+  {
+    "name": "Distribuidora CrossDock SAS",
+    "address": "Almagro 1765, Córdoba, 5000",
+    "phone": "351-8037915",
+    "email": "info@crossdock.com.ar",
+    "lat": -31.4273,
+    "lng": -64.1811,
+    "online": false
+  },
+  {
+    "name": "El Lubri",
+    "address": "Av. Carlos Gardel 257, Villa de Merlo, San Luis, 5881",
+    "phone": "2664544587",
+    "email": "ellubricentromerlo@gmail.com",
+    "lat": -32.3446,
+    "lng": -65.0036,
+    "online": false
+  },
+  {
+    "name": "Walter Muller y Cía. S.R.L",
+    "address": "Superiora Palmira Nº 758, Roque Saenz Peña, Chaco, 3700",
+    "phone": "364 4815780",
+    "email": "wmuller1978@gmail.com",
+    "lat": -26.7836,
+    "lng": -60.4543,
+    "online": false
+  },
+  {
+    "name": "Mannol Patagonia",
+    "address": "Gobernador Castello 272, Villa Regina, Río Negro, 8336",
+    "phone": "0298-4321100",
+    "email": "lubricantesrm1@gmail.com",
+    "lat": -39.1038,
+    "lng": -67.0761,
+    "online": false
+  },
+  {
+    "name": "Acción L&A",
+    "address": "Ruta Nacional 14 km 976, San Vicente, Misiones, 3364",
+    "phone": "3755-598210",
+    "email": "accionlya@gmail.com",
+    "lat": -27.0332,
+    "lng": -54.0246,
+    "online": false
+  },
+  {
+    "name": "Böser Hund Distribuidora S.A.",
+    "address": "Pueyrredon 1611, Godoy Cruz, Mendoza, 5501",
+    "phone": "261 704 6022 / 261 555 2527",
+    "email": "boserhunddistribuidora@gmail.com",
+    "lat": -32.9332,
+    "lng": -68.8401,
+    "online": false
+  },
+  {
+    "name": "LV Autopartes",
+    "address": "Valdivia 824, San Juan, 5400",
+    "phone": "264-3171197",
+    "email": "leandromartins83@hotmail.com",
+    "lat": -31.537,
+    "lng": -68.5249,
+    "online": false
+  },
+  {
+    "name": "Distribuidora Diesel Emyda",
+    "address": "Coronel Zelaya 653, San Miguel de Tucumán, 4000",
+    "phone": "0381 4331235 - 0381 2540558",
+    "email": "dieselemyda@gmail.com",
+    "lat": -26.8286,
+    "lng": -65.2226,
+    "online": false
+  },
+  {
+    "name": "Lubrinor",
+    "address": "Juana Manuela Gorriti 456, San Salvador de Jujuy, 4600",
+    "phone": "3884310665",
+    "email": "lubrinor.jujuy@hotmail.com",
+    "lat": -24.1866,
+    "lng": -65.2995,
+    "online": false
+  },
+  {
+    "name": "Nitro Distribución",
+    "address": "Calle 8 756, Bariloche, Río Negro, 8400",
+    "phone": "2944507171",
+    "email": "nitrodistribucion@gmail.com",
+    "lat": -41.1356,
+    "lng": -71.3103,
+    "online": false
+  },
+  {
+    "name": "Sur Repuestos",
+    "address": "Alfonsina Storni 2074, Ushuaia, Tierra del Fuego, 9410",
+    "phone": "2901-510672",
+    "email": "surrepuestosush@gmail.com",
+    "lat": -54.8019,
+    "lng": -68.3029,
+    "online": false
+  }
+]

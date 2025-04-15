@@ -1,0 +1,48 @@
+
+
+.map-wrapper {
+  display: flex;
+  height: 70vh;
+}
+
+#leaflet-map {
+  flex: 1;
+  height: 100%;
+}
+
+.sidebar {
+  width: 350px;
+  max-width: 100%;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.store-card {
+  background: white;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.leaflet-popup-content {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.leaflet-popup-content b {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
