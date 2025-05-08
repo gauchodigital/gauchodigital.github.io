@@ -23,7 +23,7 @@
   --insur-gray-rgb: 105, 110, 119;
   --insur-white: #ffffff;
   --insur-white-rgb: 255, 255, 255;
-  --insur-base: #015fc9;
+  --insur-base: #0F164C;
   --insur-base-rgb: 1, 95, 201;
   --insur-black: #16243d;
   --insur-black-rgb: 22, 36, 61;
@@ -2108,7 +2108,7 @@ ul {
 }
 
 .main-slider__title span {
-  color: #015fc9;
+  color:var(--insur-base) ;
   font-weight: 700;
 }
 
@@ -2740,9 +2740,10 @@ ul {
   left: -40px;
   top: -90px;
   border-radius: 50%;
-  background-image: -moz-linear-gradient(0deg, rgb(1, 95, 201) 0%, rgb(176, 239, 252) 100%);
-  background-image: -webkit-linear-gradient(0deg, rgb(1, 95, 201) 0%, rgb(176, 239, 252) 100%);
-  background-image: -ms-linear-gradient(0deg, rgb(1, 95, 201) 0%, rgb(176, 239, 252) 100%);  
+  background-image: -moz-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
+  background-image: -webkit-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
+  background-image: -ms-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
+  
   width: 197px;
   height: 197px;
   -webkit-transition: all 500ms ease;
@@ -2750,9 +2751,9 @@ ul {
 }
 
 .feature-one__single:hover .feature-one__icon {
-  background-image: -moz-linear-gradient(0deg, rgb(12, 224, 255) 0%, rgb(1, 95, 201) 100%);
-  background-image: -webkit-linear-gradient(0deg, rgb(12, 224, 255) 0%, rgb(1, 95, 201) 100%);
-  background-image: -ms-linear-gradient(0deg, rgb(12, 224, 255) 0%, rgb(1, 95, 201) 100%);
+  background-image: -moz-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
+  background-image: -webkit-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
+  background-image: -ms-linear-gradient(0deg, #2CA5A4 0%, #61D0CF 100%);
 }
 
 .feature-one__icon span {
@@ -2941,7 +2942,7 @@ ul {
   right: -65px;
   content: "";
   border-top: 0px solid transparent;
-  border-left: 65px solid #0ce0ff;
+  border-left: 65px solid #61D0CF;
   border-bottom: 62px solid transparent;
 }
 
@@ -3422,6 +3423,7 @@ ul {
   background-color: #111d32;
   padding: 35px 20px 32px;
   overflow: hidden;
+  height: 200px;
 }
 
 .why-choose-one__list-icon {
@@ -3432,7 +3434,7 @@ ul {
 
 .why-choose-one__list-icon span {
   font-size: 45px;
-  color: var(--insur-primary);
+  color: #61D0CF;
   position: relative;
   display: inline-block;
   transition: all 500ms linear;
